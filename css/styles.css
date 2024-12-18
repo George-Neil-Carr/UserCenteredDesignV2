@@ -156,6 +156,8 @@ main {
 	line-height: 1.8;
     color: #000000;
 }
+/* Input, Submit and Submit hover have been adapted from w3c */
+/* https://www.w3schools.com/css/css_form.asp */
 input[type=text], select {
   width: 100%;
   padding: 12px 20px;
