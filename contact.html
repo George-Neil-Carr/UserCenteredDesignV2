@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume Website - Home</title>
+    <title>Resume Website - Contact</title>
     <link rel="stylesheet" href="css/styles.css">
 	<!-- Add icon library -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,24 +15,43 @@
             <h2>Computer Science Lecturer</h2>
         </div>
         <nav class="navigation">
-            <a href="home.html" id="current">Home</a>
+            <a href="home.html">Home</a>
             <a href="resume.html">Resume</a>
-            <a href="contact.html">Contact</a>
-
+            <a href="contact.html" id="current">Contact</a>
         </nav>
         <div class="picture-section">
             <img src="images/pigeonprofile.jpg" alt="A Beautiful Green pigeon">
         </div>
     </header>
-    <main id="home">
+    <main id="contact">
+        <section class="content-left">
+			<h2>Personal Information</h2>
+            <h3>Name</h3>
+            <p>George Carr</p>
+			<h3>Address</h3>
+            <p>25 Carlton Grove, Wrexham, UK</p>
+			<h3>Phone</h3>
+            <p>+44 7557986628</p>
+			<h3>Email</h3>
+            <p>george.carr@cambria.ac.uk</p>
+        </section>
+        <section class="content-right">
+			<!-- Fix formatting later -->		
+              <div class="contact-form">
+				<h2 class="heading">Contact Form</h2>
+				<form id="contact-form" action="mailto:george.carr@cambria.ac.uk" method="POST">
+				  <label for="name">Name:</label>
+				  <input type="text" id="name" name="name" required><br>
 
-        <section class="content-full">
-			<h2>About Me</h2>
-            <h3>Experience</h3>
-            <p>I've been involved with Coleg Cambria teaching Web Design Topics for 15 years!</p>
-			<h3>Interests</h3>
-			
-            <p>I love keeping up to date with latest technology developments as well as educational research</p>
+				  <label for="email">Email:</label>
+				  <input type="text" id="email" name="email" required><br>
+
+				  <label for="message">Message:</label>
+				  <input type="text" id="message" name="message" required><br>
+
+				  <input type="submit" value="Submit">
+				</form>
+  
         </section>
     </main>
 
