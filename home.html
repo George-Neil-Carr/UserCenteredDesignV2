@@ -1,53 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume Website - Home</title>
-    <link rel="stylesheet" href="css/styles.css">
-	<!-- Add icon library referenced in the stylesheet -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    <head>
+        <!-- Meta Information and Stylesheets -->
+        <meta charset="UTF-8"> <!-- Specifies the character encoding for the document -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsive design on mobile devices -->
+        <title>Resume Website - Home</title> <!-- Title of the web page, appears in the browser tab -->
+        
+        <!-- Link to external CSS file for styling the website -->
+        <link rel="stylesheet" href="css/styles.css"> 
+        
+        <!-- Link to Font Awesome library for using social media icons (e.g., Facebook, Twitter) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
 <body>
     <header>
+        <!-- Logo and personal information -->
         <div class="logo-section">
-            <h1>George Carr</h1>
-            <h2>Computer Science Lecturer</h2>
+            <h1>George Carr</h1> <!-- Main heading -->
+            <h2>Computer Science Lecturer</h2> <!-- Subtitle -->
         </div>
+        
+        <!-- Navigation Bar: Links to other pages of the website -->
         <nav class="navigation">
-            <a href="home.html" id="current">Home</a>
-            <a href="resume.html">Resume</a>
-            <a href="contact.html">Contact</a>
-
+            <a href="home.html" id="current">Home</a> <!-- Link to the Home page -->
+            <a href="resume.html">Resume</a> <!-- Link to the Resume page with an active state (styled with 'current' class) -->
+            <a href="contact.html">Contact</a> <!-- Link to the Contact page -->
         </nav>
+        
+        <!-- Profile Picture Section: Displays an image of my spirit animal -->
         <div class="picture-section">
-            <img src="images/pigeonprofile.jpg" alt="A Beautiful Green pigeon">
+            <img src="images/pigeonprofile.jpg" alt="A Beautiful Green pigeon"> <!-- Profile image, with alt text for accessibility -->
         </div>
     </header>
-    <main id="home">
 
+    <main id="home">
+<!-- Main Content Section: Information about me-->
         <section class="content-full">
-			<h2>About Me</h2>
-            <h3>Experience</h3>
+			<h2>About Me</h2> <!-- Heading for About Me-->
+            <h3>Experience</h3> <!-- Heading for Experiance -->
             <p>I've been involved with Coleg Cambria teaching Web Design Topics for 15 years!</p>
-			<h3>Interests</h3>
-			
+			<h3>Interests</h3>	<!-- Heading for INterests-->		
             <p>I love keeping up to date with latest technology developments as well as educational research</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 George Carr</p>
-	<!-- All fa classes are based on W3C tutorial linked in the stylesheet -->
-     <!-- The links go to the Social Media main page rather than a personal profile -->			
+        <!-- Copyright Statement -->
+        <p>&copy; 2024 George Carr</p> <!-- Copyright notice for the website -->
+        
+        <!-- Social Media Links Section -->
         <div class="social-media">
-            <a href="https://www.facebook.com/?locale=en_GB" target="_blank">Facebook</a>
-			<a href="https://www.facebook.com/?locale=en_GB" class="fa fa-facebook" target="_blank"></a>
-            <a href="https://x.com/?lang=en" target="_blank">Twitter</a>
-			<a href="https://x.com/?lang=en" class="fa fa-twitter" target="_blank"></a>
-            <a href="https://uk.linkedin.com/" target="_blank">LinkedIn</a>			
-			<a href="https://uk.linkedin.com/" class="fa fa-linkedin" target="_blank"></a>
+            <!-- Text Links to Social Media Platforms -->
+            <a href="https://www.facebook.com/?locale=en_GB" target="_blank">Facebook</a> <!-- Facebook link (opens in a new tab) -->
+            
+            <!-- Social Media Icons (Font Awesome icons) for Facebook, Twitter, and LinkedIn -->
+            <a href="https://www.facebook.com/?locale=en_GB" class="fa fa-facebook" target="_blank"></a> <!-- Facebook icon (styled using Font Awesome) -->
+            <a href="https://x.com/?lang=en" target="_blank">Twitter</a> <!-- Twitter link (opens in a new tab) -->
+            <a href="https://x.com/?lang=en" class="fa fa-twitter" target="_blank"></a> <!-- Twitter icon -->
+            <a href="https://uk.linkedin.com/" target="_blank">LinkedIn</a> <!-- LinkedIn link (opens in a new tab) -->
+            <a href="https://uk.linkedin.com/" class="fa fa-linkedin" target="_blank"></a> <!-- LinkedIn icon -->
         </div>
     </footer>
+
 </body>
 </html>

@@ -1,4 +1,5 @@
-/* General Styles */
+/* General Styles for the site*/
+/*  A generic websave font, no margn or padding and a light green background */
 body {
     font-family: Tahoma, Verdana, sans-serif;
     margin: 0;
@@ -6,6 +7,10 @@ body {
 	background-color: #e6ffe6;
 }
 
+/* General Styles for the header*/
+/*  Make flex possible and wrap it for smaller screens*/
+/* Align centre and justify contents*/
+/* Quite a large padding and slihgtly different shade of green*/
 header {
     display: flex;
     flex-wrap: wrap;
@@ -14,7 +19,9 @@ header {
     padding: 40px;
     background-color: #e8f6e8;
 }
-
+/* General Styles for the logo area*/
+/*  Allow flex and include a small amount of padding*/
+/*  H1 and H2 basic rules set*/
 .logo-section {
     flex: 1;
     padding: 10px;
@@ -29,45 +36,55 @@ header {
     font-size: 20px;
     color: #cc0066;
 }
-
+/* General Styles for the navigation area*/
+/*  Allow flex and use a flexbox for the navigation*/
+/*  Distribute space between elements and add some padding*/
 .navigation {
     flex: 1;
     display: flex;
     justify-content: space-around;
     padding: 10px;
 	
-	
 }
-
+/* navigation area buttons*/
+/*  No text underline and some padding*/
+/*  Distribute space between elements and add some padding*/
+/*  color of contents, background colour and border colour and size established*/
+/*  dimensions of, width, height and order radius established*/
+/* Add a smooth transition for hover effects */
 .navigation a {
     text-decoration: none;
     padding: 10px 20px;
     color: #008000;
-	width:100px;	
-	height: 30px;
     background-color: #f0fdf0;
     border: 2px solid #ffd700;
+	width:100px;	
+	height: 30px;
+
     border-radius: 10px;
     font-weight: bold;
     transition: 0.3s ease;
 }
-
+/* On mouse hover*/
+/* Change contents and background colour and add a subtle drop shadow*/
 .navigation a:hover {
     color: #004d00;
     background-color: #ffe4b5;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Change the colour of the active page link to aid usability*/
 #current {
 background-color:#ffd700; 
 }
-
+/* for the section the picture is in, allow it to flex, align right and add small padding*/
 .picture-section {
     flex: 1;
     text-align: right;
     padding: 2px;
 }
-
+/* for the picture itself, allow it to fill the container, matinaed the aspect ratio and make the picture smaller*/
+/* These options alongside the flexible container it is in allows the picture to resize based on screen size */
 .picture-section img {
     max-width: 100%;
     height: auto;
@@ -75,32 +92,34 @@ background-color:#ffd700;
 }
 
 /* Content Sections */
+/* Allow all main contents to flex with wrap for smaller screens*/
 main {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
 }
-
+/* Make content sections flexible */
 .content-left, .content-right {
     flex: 1;
     padding: 20px;
 }
-
+/* Left content is always a light pink*/
 .content-left {
     background-color: #f9ecf9;
 }
-
+/* Left content H2 size, colour and font weight*/
 .content-left h2 {
     font-size: 24px;
     color: #611f61;
 	font-weight: 800;
 }
-
+/* Left content H2 size and font weight with less emphasis */
 .content-left h3 {
     font-size: 20px;
     color: #611f61;
 	font-weight: 600;
 }
+/* For the parapragph text in this section, establish a font size, establish a margin at the bottom and increase space between links */
 .content-left p {
 	font-size: 1rem;
 	margin-bottom: 15px;
@@ -108,48 +127,51 @@ main {
     color: #000000;
 }
 
+
+/* make the right content white */
 .content-right {
     background-color: #ffffff;
 }
 
-
+/* same as content left H2, but a dark green */
 .content-right h2 {
     font-size: 24px;
     color: #006600;
 	font-weight: 800;
 }
-
+/* same as content left H3, but a dark green */
 .content-right h3 {
     font-size: 20px;
     color: #006600;
 	font-weight: 600;
 }
-
+/* same as content left p*/
 .content-right p {
 	font-size: 1rem;
 	margin-bottom: 15px;
 	line-height: 1.8;
     color: #000000;
 }
-
+/* make the content fill the width of the screen, make it white and add 20 px  */
 .content-full {
     background-color: #f9ecf9;
 	display: block;
 	width: 100%;
 	padding: 20px;
 }
-
+/* same as content left H2 */
 .content-full h2 {
     font-size: 24px;
     color: #611f61;
 	font-weight: 800;
 }
-
+/* same as content left H3 */
 .content-full h3 {
     font-size: 20px;
     color: #611f61;
 	font-weight: 600;
 }
+/* same as content left p */
 .content-full p {
 	font-size: 1rem;
 	margin-bottom: 15px;
@@ -158,82 +180,86 @@ main {
 }
 /* Input, Submit and Submit hover have been adapted from w3c */
 /* https://www.w3schools.com/css/css_form.asp */
+
 input[type=text], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+    width: 100%; /* Make the input and select fields full-width */
+    padding: 12px 20px; /* Add padding inside the fields */
+    margin: 8px 0; /* Add margin around the fields */
+    display: inline-block; /* Make them inline-block */
+    border: 1px solid #ccc; /* Set a light gray border */
+    border-radius: 4px; /* Round the corners of the fields */
+    box-sizing: border-box; /* Include padding and border in width/height */
 }
 
 input[type=submit] {
-  width: 100%;
-  background-color: #ffe4b5;
-  color: black;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: 1px;
-  border-radius: 4px;
-  cursor: pointer;
+    width: 100%; /* Make the submit button full-width */
+    background-color: #ffe4b5; /* Set a light yellow background */
+    color: black; /* Set text color to black */
+    padding: 14px 20px; /* Add padding inside the button */
+    margin: 8px 0; /* Add margin around the button */
+    border: 1px; /* Set border width */
+    border-radius: 4px; /* Round the corners of the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
 }
-
+/* Change background color on mouse hover */
 input[type=submit]:hover {
   background-color: #DAA520;
 }
 
 
-/* Footer */
+/* Rules for all footer */
+/* Align centre, add 15px padding, make the background a drak green and the text white */
 footer {
     text-align: center;
     padding: 15px;
     background-color: #006400;
     color: white;
 }
-
+/* Footer  links
+add space between the link and no text decoration*/
 footer .social-media a {
     color: white;
     margin: 0 10px;
     text-decoration: none;
 }
-
+/* Change links the yellow on hover*/
 footer .social-media a:hover {
     color: #ffd700;
 }
 
 /* All fa code below is adapted from W3C https://www.w3schools.com/howto/howto_css_social_media_buttons.asp*/
 .fa {
-  padding: 10px;
-  font-size: 40px;
-  width: 10px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
+    padding: 10px; /* Add padding inside the icons */
+    font-size: 40px; /* Set a large font size for icons */
+    width: 10px; /* Set the width of the icons */
+    text-align: center; /* Center-align the icon content */
+    text-decoration: none; /* Remove text decoration */
+    margin: 5px 2px; /* Add margin around the icons */
+    border-radius: 50%; /* Make the icons circular */
 }
-
+/* reduce opacity on hover */
 .fa:hover {
     opacity: 0.7;
 }
-
+/* Facebook logo setting */
 .fa-facebook {
   background: #3B5998;
   color: white;
 }
-
+/* Twitter logo setting */
 .fa-twitter {
   background: #55ACEE;
   color: white;
 }
-
+/* Linkedin logo setting */
 .fa-linkedin {
   background: #007bb5;
   color: white;
 }
 
 
-/* Responsive Design */
+/* Responsive Design media query*/
+/* At under 768px, stack header, navigation and main content into columns */
 @media (max-width: 768px) {
     header {
         flex-direction: column;

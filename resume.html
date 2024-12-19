@@ -1,55 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume Website - contact</title>
-    <link rel="stylesheet" href="css/styles.css">
-	<!-- Add icon library -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Meta Information and Stylesheets -->
+    <meta charset="UTF-8"> <!-- Specifies the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsive design on mobile devices -->
+    <title>Resume Website - Resume</title> <!-- Title of the web page, appears in the browser tab -->
+    
+    <!-- Link to external CSS file for styling the website -->
+    <link rel="stylesheet" href="css/styles.css"> 
+    
+    <!-- Link to Font Awesome library for using social media icons (e.g., Facebook, Twitter) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
+    <!-- Header Section: Contains the logo, navigation menu, and profile picture -->
     <header>
+        <!-- Logo and personal information -->
         <div class="logo-section">
-            <h1>George Carr</h1>
-            <h2>Computer Science Lecturer</h2>
+            <h1>George Carr</h1> <!-- Main heading -->
+            <h2>Computer Science Lecturer</h2> <!-- Subtitle -->
         </div>
+        
+        <!-- Navigation Bar: Links to other pages of the website -->
         <nav class="navigation">
-            <a href="home.html">Home</a>
-            <a href="resume.html" id="current">Resume</a>
-            <a href="contact.html">Contact</a>
+            <a href="home.html">Home</a> <!-- Link to the Home page -->
+            <a href="resume.html" id="current">Resume</a> <!-- Link to the Resume page with an active state (styled with 'current' class) -->
+            <a href="contact.html">Contact</a> <!-- Link to the Contact page -->
         </nav>
+        
+        <!-- Profile Picture Section: Displays an image of my spirit animal -->
         <div class="picture-section">
-            <img src="images/pigeonprofile.jpg" alt="A Beautiful Green pigeon">
+            <img src="images/pigeonprofile.jpg" alt="A Beautiful Green pigeon"> <!-- Profile image, with alt text for accessibility -->
         </div>
     </header>
+
+    <!-- Main Content Section: Information about qualifications and skills -->
     <main id="home">
+        <!-- Left Section: Displays educational qualifications -->
         <section class="content-left">
-            <h2>Qualifications</h2>
-            <p><strong>2022-2023:</strong> PGCE In Higher Education</p>
-			<p><strong>2018-2021:</strong> MSc Learning Technology</p>
-			<p><strong>2007-2010:</strong> BSc Computing</p>
+            <h2>Qualifications</h2> <!-- Heading for qualifications section -->
+            <p><strong>2022-2023:</strong> PGCE In Higher Education</p> <!-- Year and qualification with description -->
+            <p><strong>2018-2021:</strong> MSc Learning Technology</p> <!-- Year and qualification -->
+            <p><strong>2007-2010:</strong> BSc Computing</p> <!-- Year and qualification -->
         </section>
+        
+        <!-- Right Section: Displays computer language skills and other domains of expertise -->
         <section class="content-right">
-            <h2>Computer Language Skills</h2>
-            <p>C#, Python, VB.net, SQL, HTML, CSS, Javascript</p>
-			<h2>Other Domains</h2>
-            <p>Data Analysis, Design, Statistics, Research</p>
+            <h2>Computer Language Skills</h2> <!-- Heading for programming languages section -->
+            <p>C#, Python, VB.net, SQL, HTML, CSS, Javascript</p> <!-- List of languages known -->
+            
+            <h2>Other Domains</h2> <!-- Heading for other skills and domains section -->
+            <p>Data Analysis, Design, Statistics, Research</p> <!-- List of additional skills and areas of expertise -->
         </section>
     </main>
 
+    <!-- Footer Section: Contains copyright information and social media links -->
     <footer>
-        <p>&copy; 2024 George Carr</p>
-	<!-- All fa classes are based on W3C tutorial linked in the stylesheet -->
-     <!-- The links go to the Social Media main page rather than a personal profile -->			
+        <!-- Copyright Statement -->
+        <p>&copy; 2024 George Carr</p> <!-- Copyright notice for the website -->
+        
+        <!-- Social Media Links Section -->
         <div class="social-media">
-            <a href="https://www.facebook.com/?locale=en_GB" target="_blank">Facebook</a>
-			<a href="https://www.facebook.com/?locale=en_GB" class="fa fa-facebook" target="_blank"></a>
-            <a href="https://x.com/?lang=en" target="_blank">Twitter</a>
-			<a href="https://x.com/?lang=en" class="fa fa-twitter" target="_blank"></a>
-            <a href="https://uk.linkedin.com/" target="_blank">LinkedIn</a>			
-			<a href="https://uk.linkedin.com/" class="fa fa-linkedin" target="_blank"></a>
+            <!-- Text Links to Social Media Platforms -->
+            <a href="https://www.facebook.com/?locale=en_GB" target="_blank">Facebook</a> <!-- Facebook link (opens in a new tab) -->
+            
+            <!-- Social Media Icons (Font Awesome icons) for Facebook, Twitter, and LinkedIn -->
+            <a href="https://www.facebook.com/?locale=en_GB" class="fa fa-facebook" target="_blank"></a> <!-- Facebook icon (styled using Font Awesome) -->
+            <a href="https://x.com/?lang=en" target="_blank">Twitter</a> <!-- Twitter link (opens in a new tab) -->
+            <a href="https://x.com/?lang=en" class="fa fa-twitter" target="_blank"></a> <!-- Twitter icon -->
+            <a href="https://uk.linkedin.com/" target="_blank">LinkedIn</a> <!-- LinkedIn link (opens in a new tab) -->
+            <a href="https://uk.linkedin.com/" class="fa fa-linkedin" target="_blank"></a> <!-- LinkedIn icon -->
         </div>
     </footer>
+    
 </body>
 </html>

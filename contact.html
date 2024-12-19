@@ -1,77 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume Website - Contact</title>
-    <link rel="stylesheet" href="css/styles.css">
-	<!-- Add icon library -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    <head>
+        <!-- Meta Information and Stylesheets -->
+        <meta charset="UTF-8"> <!-- Specifies the character encoding for the document -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsive design on mobile devices -->
+        <title>Resume Website - contact</title> <!-- Title of the web page, appears in the browser tab -->
+        
+        <!-- Link to external CSS file for styling the website -->
+        <link rel="stylesheet" href="css/styles.css"> 
+        
+        <!-- Link to Font Awesome library for using social media icons (e.g., Facebook, Twitter) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
 <body>
+
     <header>
+        <!-- Logo and personal information -->
         <div class="logo-section">
-            <h1>George Carr</h1>
-            <h2>Computer Science Lecturer</h2>
+            <h1>George Carr</h1> <!-- Main heading -->
+            <h2>Computer Science Lecturer</h2> <!-- Subtitle -->
         </div>
+        
+        <!-- Navigation Bar: Links to other pages of the website -->
         <nav class="navigation">
-            <a href="home.html">Home</a>
-            <a href="resume.html">Resume</a>
-            <a href="contact.html" id="current">Contact</a>
+            <a href="home.html" >Home</a> <!-- Link to the Home page -->
+            <a href="resume.html">Resume</a> <!-- Link to the Resume page with an active state (styled with 'current' class) -->
+            <a href="contact.html" id="current">Contact</a> <!-- Link to the Contact page -->
         </nav>
+        
+        <!-- Profile Picture Section: Displays an image of my spirit animal -->
         <div class="picture-section">
-            <img src="images/pigeonprofile.jpg" alt="A Beautiful Green pigeon">
+            <img src="images/pigeonprofile.jpg" alt="A Beautiful Green pigeon"> <!-- Profile image, with alt text for accessibility -->
         </div>
     </header>
+
+
     <main id="contact">
         <section class="content-left">
-			<h2>Personal Information</h2>
-            <h3>Name</h3>
-            <p>George Carr</p>
-			<h3>Address</h3>
-            <p>25 Carlton Grove, Wrexham, UK</p>
-			<h3>Phone</h3>
-            <p>+44 7557986628</p>
-			<h3>Email</h3>
-            <p>george.carr@cambria.ac.uk</p>
+            <!-- Personal Information Section -->
+            <h2>Personal Information</h2> <!-- Main heading for the personal information section. -->
+
+            <h3>Name</h3> <!-- Subheading for the name of the individual. -->
+            <p>George Carr</p> <!-- Displays the name of the individual. -->
+
+            <h3>Address</h3> <!-- Subheading for the address. -->
+            <p>25 Carlton Grove, Wrexham, UK</p> <!-- Displays the address of the individual. -->
+
+            <h3>Phone</h3> <!-- Subheading for the phone number. -->
+            <p>+44 7557986628</p> <!-- Displays the phone number. -->
+
+            <h3>Email</h3> <!-- Subheading for the email address. -->
+            <p>george.carr@cambria.ac.uk</p> <!-- Displays the email address. -->
 
 
 
-            <a href="documents/GeorgeCarr-C.V.ColegCambria.pdf" target="_blank">View CV</a>
+            <a href="documents/GeorgeCarr-C.V.ColegCambria.pdf" target="_blank">View CV</a> <!-- A link to download my CV in a new tab-->
         </section>
+
         <section class="content-right">
 			<!-- This form was taken from W3C and amended. Details are in contact-form css -->		
-              <div class="contact-form">
-				<h2 class="heading">Contact Form</h2>
-				<form id="contact-form" action="mailto:george.carr@cambria.ac.uk" method="POST">
-				  <label for="name">Name:</label>
-				  <input type="text" id="name" name="name" required><br>
-
-				  <label for="email">Email:</label>
-				  <input type="text" id="email" name="email" required><br>
-
-				  <label for="message">Message:</label>
-				  <input type="text" id="message" name="message" required><br>
-
-				  <input type="submit" value="Submit">
-				</form>
-              </div>
+            <div class="contact-form">
+                <!-- Contact Form Section -->
+                <h2 class="heading">Contact Form</h2> <!-- Heading for the contact form section. -->
+            
+                <!-- Start of the form -->
+                <form id="contact-form" action="mailto:george.carr@cambria.ac.uk" method="POST">
+                    <!-- This form will send data to the specified email address using the POST method. -->
+            
+                    <!-- Name input field -->
+                    <label for="name">Name:</label> <!-- Label for the name field -->
+                    <input type="text" id="name" name="name" required> <!-- Text input for the name (required field) -->
+                    <br>
+            
+                    <!-- Email input field -->
+                    <label for="email">Email:</label> <!-- Label for the email field -->
+                    <input type="text" id="email" name="email" required> <!-- Text input for the email (required field) -->
+                    <br>
+            
+                    <!-- Message input field -->
+                    <label for="message">Message:</label> <!-- Label for the message field -->
+                    <input type="text" id="message" name="message" required> <!-- Text input for the message (required field) -->
+                    <br>
+            
+                    <!-- Submit button -->
+                    <input type="submit" value="Submit"> <!-- Submit button to send the form -->
+                </form>
+            </div>
   
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 George Carr</p>
-	<!-- All fa classes are based on W3C tutorial linked in the stylesheet -->
-     <!-- The links go to the Social Media main page rather than a personal profile -->			
+        <!-- Copyright Statement -->
+        <p>&copy; 2024 George Carr</p> <!-- Copyright notice for the website -->
+        
+        <!-- Social Media Links Section -->
         <div class="social-media">
-            <a href="https://www.facebook.com/?locale=en_GB" target="_blank">Facebook</a>
-			<a href="https://www.facebook.com/?locale=en_GB" class="fa fa-facebook" target="_blank"></a>
-            <a href="https://x.com/?lang=en" target="_blank">Twitter</a>
-			<a href="https://x.com/?lang=en" class="fa fa-twitter" target="_blank"></a>
-            <a href="https://uk.linkedin.com/" target="_blank">LinkedIn</a>			
-			<a href="https://uk.linkedin.com/" class="fa fa-linkedin" target="_blank"></a>
+            <!-- Text Links to Social Media Platforms -->
+            <a href="https://www.facebook.com/?locale=en_GB" target="_blank">Facebook</a> <!-- Facebook link (opens in a new tab) -->
+            
+            <!-- Social Media Icons (Font Awesome icons) for Facebook, Twitter, and LinkedIn -->
+            <a href="https://www.facebook.com/?locale=en_GB" class="fa fa-facebook" target="_blank"></a> <!-- Facebook icon (styled using Font Awesome) -->
+            <a href="https://x.com/?lang=en" target="_blank">Twitter</a> <!-- Twitter link (opens in a new tab) -->
+            <a href="https://x.com/?lang=en" class="fa fa-twitter" target="_blank"></a> <!-- Twitter icon -->
+            <a href="https://uk.linkedin.com/" target="_blank">LinkedIn</a> <!-- LinkedIn link (opens in a new tab) -->
+            <a href="https://uk.linkedin.com/" class="fa fa-linkedin" target="_blank"></a> <!-- LinkedIn icon -->
         </div>
     </footer>
+
 </body>
 </html>
